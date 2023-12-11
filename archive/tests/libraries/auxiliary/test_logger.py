@@ -7,18 +7,26 @@ from logger import Logger  # Assuming the Logger class is in logger.py
 class TestLogger(unittest.TestCase):
 
     def setUp(self):
-        # Create a temporary file for logging
+        # Create a temporary file and then close and delete it to use its path
         fd, self.log_file_name = tempfile.mkstemp()
-        os.close(fd)  # Close the file descriptor immediately
+        os.close(fd)
+        os.remove(self.log_file_name)
 
-        # Initialize Logger with the temporary file name
+        # Initialize Logger with the temporary file path
         self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)
 
     def tearDown(self):
-        # Delete the temporary log file after testing
-        if os.path.exists(self.log_file_name):
-            os.remove(self.log_file_name)
-        Logger.instance = None  # Reset the Logger instance for the next test
+        # Reset the Logger instance for the next test
+        Logger.instance = None
+
+        # Attempt to delete the temporary log file after testing
+        for _ in range(5):  # Retry mechanism
+            try:
+                if os.path.exists(self.log_file_name):
+                    os.remove(self.log_file_name)
+                break
+            except PermissionError:
+                time.sleep(1)  # Wait a bit and retry
 
     def read_log_content(self):
         with open(self.log_file_name, 'r') as f:
