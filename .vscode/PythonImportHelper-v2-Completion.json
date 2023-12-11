@@ -1,0 +1,489 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigStrategy",
+        "importPath": "config_strategy",
+        "description": "config_strategy",
+        "isExtraImport": true,
+        "detail": "config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "CSVConfigStrategy",
+        "importPath": "config_strategy",
+        "description": "config_strategy",
+        "isExtraImport": true,
+        "detail": "config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "JSONConfigStrategy",
+        "importPath": "config_strategy",
+        "description": "config_strategy",
+        "isExtraImport": true,
+        "detail": "config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "PythonConfigStrategy",
+        "importPath": "config_strategy",
+        "description": "config_strategy",
+        "isExtraImport": true,
+        "detail": "config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Logger",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigStrategy",
+        "importPath": "src.libraries.configuration",
+        "description": "src.libraries.configuration",
+        "isExtraImport": true,
+        "detail": "src.libraries.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "src.libraries.configuration",
+        "description": "src.libraries.configuration",
+        "isExtraImport": true,
+        "detail": "src.libraries.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigurationError",
+        "importPath": "src.libraries.configuration",
+        "description": "src.libraries.configuration",
+        "isExtraImport": true,
+        "detail": "src.libraries.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "DateHandler",
+        "importPath": "date_handler",
+        "description": "date_handler",
+        "isExtraImport": true,
+        "detail": "date_handler",
+        "documentation": {}
+    },
+    {
+        "label": "statement for your PathBuilder class",
+        "importPath": "pathbuilder import PathBuilder  # Replace with the appropriate",
+        "description": "pathbuilder import PathBuilder  # Replace with the appropriate",
+        "isExtraImport": true,
+        "detail": "pathbuilder import PathBuilder  # Replace with the appropriate",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "RequestException",
+        "importPath": "requests.exceptions",
+        "description": "requests.exceptions",
+        "isExtraImport": true,
+        "detail": "requests.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "FileHandlerFactory",
+        "importPath": "data.source.file.file_handler_factory",
+        "description": "data.source.file.file_handler_factory",
+        "isExtraImport": true,
+        "detail": "data.source.file.file_handler_factory",
+        "documentation": {}
+    },
+    {
+        "label": "DataFetchError",
+        "importPath": "exceptions.custom_exceptions",
+        "description": "exceptions.custom_exceptions",
+        "isExtraImport": true,
+        "detail": "exceptions.custom_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "FileSaveError",
+        "importPath": "exceptions.custom_exceptions",
+        "description": "exceptions.custom_exceptions",
+        "isExtraImport": true,
+        "detail": "exceptions.custom_exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "Logger",
+        "kind": 6,
+        "importPath": "archive.src.libraries.auxiliary.logger.logger",
+        "description": "archive.src.libraries.auxiliary.logger.logger",
+        "peekOfCode": "class Logger:\n    \"\"\"A singleton class for logging messages with different levels.\n    The log messages can be written to both console and file, with the ability to disable either.\n    There are 3 levels of log messages: INFO, WARNING, DEBUG. The format of the log message is \n    'current date and time [log level] log message'. The class also has an option to include a \n    progress bar in the log message and to log an exit message with the trace tree of an error.\n    Attributes:\n        instance (Logger): The singleton instance of the class.\n        disabled (bool): Whether logging is enabled or not.\n        logger (logging.Logger): The underlying logger object from the logging library.",
+        "detail": "archive.src.libraries.auxiliary.logger.logger",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.config_strategies.config_strategy",
+        "description": "archive.src.libraries.configuration.config_strategies.config_strategy",
+        "peekOfCode": "class ConfigStrategy(ABC):\n    \"\"\"Abstract base class defining the interface for configuration strategies.\"\"\"\n    @abstractmethod\n    def read_config(self) -> dict:\n        \"\"\"Abstract method to read configuration data.\"\"\"\n        pass",
+        "detail": "archive.src.libraries.configuration.config_strategies.config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "CSVConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.config_strategies.csv_config_strategy",
+        "description": "archive.src.libraries.configuration.config_strategies.csv_config_strategy",
+        "peekOfCode": "class CSVConfigStrategy(ConfigStrategy):\n    \"\"\"Strategy for reading CSV configuration files.\"\"\"\n    def __init__(self, file_path: str):\n        self.file_path = file_path\n    def read_config(self) -> list:\n        with open(self.file_path, mode='r') as file:\n            return list(csv.DictReader(file))",
+        "detail": "archive.src.libraries.configuration.config_strategies.csv_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "JSONConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.config_strategies.json_config_strategy",
+        "description": "archive.src.libraries.configuration.config_strategies.json_config_strategy",
+        "peekOfCode": "class JSONConfigStrategy(ConfigStrategy):\n    \"\"\"Strategy for reading JSON configuration files.\"\"\"\n    def __init__(self, file_path: str):\n        self.file_path = file_path\n    def read_config(self) -> dict:\n        with open(self.file_path, 'r') as file:\n            return json.load(file)",
+        "detail": "archive.src.libraries.configuration.config_strategies.json_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "PythonConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.config_strategies.py_config_strategy",
+        "description": "archive.src.libraries.configuration.config_strategies.py_config_strategy",
+        "peekOfCode": "class PythonConfigStrategy(ConfigStrategy):\n    \"\"\"Strategy for reading structured Python file configuration.\"\"\"\n    def __init__(self, file_path: str):\n        self.file_path = file_path\n    def read_config(self) -> dict:\n        \"\"\"Loads a Python file and extracts configuration data from the first found class and its nested classes.\n        Returns:\n            dict: Configuration data read from the Python file.\n        \"\"\"\n        with open(self.file_path, 'r') as file:",
+        "detail": "archive.src.libraries.configuration.config_strategies.py_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigurationError",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.configuration",
+        "description": "archive.src.libraries.configuration.configuration",
+        "peekOfCode": "class ConfigurationError(Exception):\n    \"\"\"Custom exception class for Configuration errors.\"\"\"\n    pass\nclass Configuration:\n    \"\"\"Main class for application configuration management.\"\"\"\n    def __init__(self, strategies: list[ConfigStrategy] = None):\n        \"\"\"Initializes the Configuration instance.\n        Args:\n            strategies (list[ConfigStrategy], optional): List of configuration reading strategies.\n        \"\"\"",
+        "detail": "archive.src.libraries.configuration.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "kind": 6,
+        "importPath": "archive.src.libraries.configuration.configuration",
+        "description": "archive.src.libraries.configuration.configuration",
+        "peekOfCode": "class Configuration:\n    \"\"\"Main class for application configuration management.\"\"\"\n    def __init__(self, strategies: list[ConfigStrategy] = None):\n        \"\"\"Initializes the Configuration instance.\n        Args:\n            strategies (list[ConfigStrategy], optional): List of configuration reading strategies.\n        \"\"\"\n        self.strategies = strategies or []\n        self.config_data = {}\n    def load(self) -> None:",
+        "detail": "archive.src.libraries.configuration.configuration",
+        "documentation": {}
+    },
+    {
+        "label": "DateHandler",
+        "kind": 6,
+        "importPath": "archive.src.libraries.date.date",
+        "description": "archive.src.libraries.date.date",
+        "peekOfCode": "class DateHandler:\n    \"\"\"\n    A class for handling various date-related operations.\n    Attributes:\n        formats (List[str]): List of date formats supported for parsing.\n        date (datetime.datetime): The current date held by the instance.\n    Args:\n        date (Optional[str]): A string representing a date. If provided, it will be parsed based on the supported formats.\n        additional_formats (Optional[List[str]]): Additional date formats to be considered for parsing.\n    Raises:",
+        "detail": "archive.src.libraries.date.date",
+        "documentation": {}
+    },
+    {
+        "label": "PathBuilder",
+        "kind": 6,
+        "importPath": "archive.src.libraries.path_builder.path_builder",
+        "description": "archive.src.libraries.path_builder.path_builder",
+        "peekOfCode": "class PathBuilder:\n    def __init__(self, *path_components):\n        \"\"\"\n        Initialize the PathBuilder with initial path components.\n        Args:\n            path_components (str): Initial components of the path.\n        \"\"\"\n        self.path = Path(*path_components)\n    def add(self, *path_components):\n        \"\"\"",
+        "detail": "archive.src.libraries.path_builder.path_builder",
+        "documentation": {}
+    },
+    {
+        "label": "TestLogger",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.auxiliary.test_logger",
+        "description": "archive.tests.libraries.auxiliary.test_logger",
+        "peekOfCode": "class TestLogger(unittest.TestCase):\n    def setUp(self):\n        self.log_file = 'test_log.txt'\n        self.logger = Logger.get_instance(log_file=self.log_file, log_level=logging.DEBUG, file_logging=True, console_logging=False)\n    def tearDown(self):\n        if os.path.exists(self.log_file):\n            os.remove(self.log_file)\n        Logger.instance = None  # Reset the Logger instance for the next test\n    def test_logging_to_file(self):\n        self.logger.log(\"Test message\", level=logging.INFO)",
+        "detail": "archive.tests.libraries.auxiliary.test_logger",
+        "documentation": {}
+    },
+    {
+        "label": "TestConfiguration",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.configuration.test_app_config",
+        "description": "archive.tests.libraries.configuration.test_app_config",
+        "peekOfCode": "class TestConfiguration(unittest.TestCase):\n    \"\"\"Tests for the Configuration class.\"\"\"\n    def test_loading_configurations(self):\n        \"\"\"Test loading configurations using strategies.\"\"\"\n        mock_json_strategy = Mock(spec=ConfigStrategy)\n        mock_json_strategy.read_config.return_value = {\"json_key\": \"json_value\"}\n        mock_csv_strategy = Mock(spec=ConfigStrategy)\n        mock_csv_strategy.read_config.return_value = {\"csv_key\": \"csv_value\"}\n        config = Configuration([mock_json_strategy, mock_csv_strategy])\n        config.load()",
+        "detail": "archive.tests.libraries.configuration.test_app_config",
+        "documentation": {}
+    },
+    {
+        "label": "TestCSVConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.configuration.test_csv_config_strategy",
+        "description": "archive.tests.libraries.configuration.test_csv_config_strategy",
+        "peekOfCode": "class TestCSVConfigStrategy(unittest.TestCase):\n    \"\"\"Tests for the CSVConfigStrategy class.\"\"\"\n    def test_read_config(self):\n        \"\"\"Test reading configuration from a CSV file.\"\"\"\n        with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.csv') as temp_file:\n            writer = csv.writer(temp_file)\n            writer.writerow([\"key\", \"value\"])\n            writer.writerow([\"csv_key\", \"csv_value\"])\n            temp_file.flush()\n            strategy = CSVConfigStrategy(temp_file.name)",
+        "detail": "archive.tests.libraries.configuration.test_csv_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "TestJSONConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.configuration.test_json_config_strategy",
+        "description": "archive.tests.libraries.configuration.test_json_config_strategy",
+        "peekOfCode": "class TestJSONConfigStrategy(unittest.TestCase):\n    \"\"\"Tests for the JSONConfigStrategy class.\"\"\"\n    def test_read_config(self):\n        \"\"\"Test reading configuration from a JSON file.\"\"\"\n        with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.json') as temp_file:\n            json.dump({\"json_key\": \"json_value\"}, temp_file)\n            temp_file.flush()\n            strategy = JSONConfigStrategy(temp_file.name)\n            config = strategy.read_config()\n            self.assertEqual(config, {\"json_key\": \"json_value\"})",
+        "detail": "archive.tests.libraries.configuration.test_json_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "TestPythonConfigStrategy",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "description": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "peekOfCode": "class TestPythonConfigStrategy(unittest.TestCase):\n    \"\"\"Tests for the PythonConfigStrategy class.\"\"\"\n    def test_read_config(self):\n        \"\"\"Test reading configuration from a Python file.\"\"\"\n        with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.py') as temp_file:\n            temp_file.write(\"\"\"\nclass AppConfig:\n    general_path = 'path/to/something'\n    class DatabaseConfig:\n        uri = 'sqlite:///example.db'",
+        "detail": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "description": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "peekOfCode": "class AppConfig:\n    general_path = 'path/to/something'\n    class DatabaseConfig:\n        uri = 'sqlite:///example.db'\n        pool_size = 5\n\"\"\")\n            temp_file.flush()\n            strategy = PythonConfigStrategy(temp_file.name)\n            config = strategy.read_config()\n            expected_config = {",
+        "detail": "archive.tests.libraries.configuration.test_python_config_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "TestDateHandler",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.date.test_date",
+        "description": "archive.tests.libraries.date.test_date",
+        "peekOfCode": "class TestDateHandler(unittest.TestCase):\n    def test_default_format(self):\n        dh = DateHandler('20230101')\n        self.assertEqual(str(dh), '2023-01-01')\n    def test_custom_format(self):\n        dh = DateHandler('20230101')\n        self.assertEqual(dh.format_date('%d-%m-%Y'), '01-01-2023')\n    def test_last_friday(self):\n        dh = DateHandler('20231130')  # 30th Nov 2023 is a Thursday\n        dh.find_latest_friday()",
+        "detail": "archive.tests.libraries.date.test_date",
+        "documentation": {}
+    },
+    {
+        "label": "TestPathBuilder",
+        "kind": 6,
+        "importPath": "archive.tests.libraries.path_builder.test_path_builder",
+        "description": "archive.tests.libraries.path_builder.test_path_builder",
+        "peekOfCode": "class TestPathBuilder(unittest.TestCase):\n    def setUp(self):\n        self.initial_path = 'test_dir'\n        self.builder = PathBuilder(self.initial_path)\n    def test_initial_path(self):\n        self.assertEqual(str(self.builder), self.initial_path)\n    def test_add_method(self):\n        self.builder.add('subdir')\n        self.assertEqual(str(self.builder), Path(self.initial_path, 'subdir'))\n    def test_create_method(self):",
+        "detail": "archive.tests.libraries.path_builder.test_path_builder",
+        "documentation": {}
+    },
+    {
+        "label": "AuthStrategy",
+        "kind": 6,
+        "importPath": "data.source.api.auth_strategies.auth_strategy",
+        "description": "data.source.api.auth_strategies.auth_strategy",
+        "peekOfCode": "class AuthStrategy(ABC):\n    \"\"\"Abstract base class for authentication strategies.\"\"\"\n    @abstractmethod\n    def authenticate(self) -> str:\n        \"\"\"Authenticate and return the token.\n        Returns:\n            str: The authentication token.\n        \"\"\"\n        pass\n    @abstractmethod",
+        "detail": "data.source.api.auth_strategies.auth_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ManualTokenAuth",
+        "kind": 6,
+        "importPath": "data.source.api.auth_strategies.endpoint_token_auth",
+        "description": "data.source.api.auth_strategies.endpoint_token_auth",
+        "peekOfCode": "class ManualTokenAuth(AuthStrategy):\n    \"\"\"Manual token-based authentication strategy.\"\"\"\n    def __init__(self, token: str) -> None:\n        \"\"\"Initialize with a provided token.\n        Args:\n            token (str): The authentication token.\n        \"\"\"\n        self.token = token\n        self.authenticated = True  # Assuming the provided token is initially valid\n    def authenticate(self) -> str:",
+        "detail": "data.source.api.auth_strategies.endpoint_token_auth",
+        "documentation": {}
+    },
+    {
+        "label": "ManualTokenAuth",
+        "kind": 6,
+        "importPath": "data.source.api.auth_strategies.manual_token_auth",
+        "description": "data.source.api.auth_strategies.manual_token_auth",
+        "peekOfCode": "class ManualTokenAuth(AuthStrategy):\n    \"\"\"Manual token-based authentication strategy.\"\"\"\n    def __init__(self, token: str) -> None:\n        \"\"\"Initialize with a provided token.\n        Args:\n            token (str): The authentication token.\n        \"\"\"\n        self.token = token\n        self.authenticated = True  # Assuming the provided token is initially valid\n    def authenticate(self) -> str:",
+        "detail": "data.source.api.auth_strategies.manual_token_auth",
+        "documentation": {}
+    },
+    {
+        "label": "DataAPIManager",
+        "kind": 6,
+        "importPath": "data.source.api.data_api_manager",
+        "description": "data.source.api.data_api_manager",
+        "peekOfCode": "class DataAPIManager:\n    \"\"\"Manages API interactions and data storage.\n    This class handles fetching data from an API using a specified authentication\n    strategy and storing the data in files using a file handler factory.\n    Attributes:\n        base_url (str): Base URL of the API.\n        auth_strategy (AuthStrategy): The authentication strategy to use.\n        file_factory (FileHandlerFactory): A factory for creating file handlers.\n    \"\"\"\n    def __init__(self, base_url: str, auth_strategy: AuthStrategy) -> None:",
+        "detail": "data.source.api.data_api_manager",
+        "documentation": {}
+    }
+]
