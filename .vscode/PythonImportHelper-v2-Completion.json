@@ -165,6 +165,15 @@
         "documentation": {}
     },
     {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -211,15 +220,6 @@
         "description": "src.libraries.configuration",
         "isExtraImport": true,
         "detail": "src.libraries.configuration",
-        "documentation": {}
-    },
-    {
-        "label": "tempfile",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tempfile",
-        "description": "tempfile",
-        "detail": "tempfile",
         "documentation": {}
     },
     {
@@ -383,7 +383,7 @@
         "kind": 6,
         "importPath": "archive.tests.libraries.auxiliary.test_logger",
         "description": "archive.tests.libraries.auxiliary.test_logger",
-        "peekOfCode": "class TestLogger(unittest.TestCase):\n    def setUp(self):\n        self.log_file = 'test_log.txt'\n        self.logger = Logger.get_instance(log_file=self.log_file, log_level=logging.DEBUG, file_logging=True, console_logging=False)\n    def tearDown(self):\n        if os.path.exists(self.log_file):\n            os.remove(self.log_file)\n        Logger.instance = None  # Reset the Logger instance for the next test\n    def test_logging_to_file(self):\n        self.logger.log(\"Test message\", level=logging.INFO)",
+        "peekOfCode": "class TestLogger(unittest.TestCase):\n    def setUp(self):\n        # Create a temporary file for logging\n        self.temp_log_file = tempfile.NamedTemporaryFile(delete=False)\n        self.log_file_name = self.temp_log_file.name\n        self.temp_log_file.close()\n        # Initialize Logger with the temporary file\n        self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)\n    def tearDown(self):\n        # Delete the temporary log file after testing",
         "detail": "archive.tests.libraries.auxiliary.test_logger",
         "documentation": {}
     },
