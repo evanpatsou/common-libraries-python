@@ -8,9 +8,8 @@ class TestLogger(unittest.TestCase):
 
     def setUp(self):
         # Create a temporary file for logging
-        self.temp_log_file = tempfile.NamedTemporaryFile(mode='w+t', delete=False)
-        self.log_file_name = self.temp_log_file.name
-        self.temp_log_file.close()  # Close the file for Logger to access
+        fd, self.log_file_name = tempfile.mkstemp()
+        os.close(fd)  # Close the file descriptor immediately
 
         # Initialize Logger with the temporary file name
         self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)
