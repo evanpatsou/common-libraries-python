@@ -7,18 +7,19 @@ from logger import Logger  # Assuming the Logger class is in logger.py
 class TestLogger(unittest.TestCase):
 
     def setUp(self):
-        # Create a temporary file for logging
-        self.temp_log_file = tempfile.NamedTemporaryFile(delete=False)
+        # Create a name for a temporary file for logging without opening it
+        self.temp_log_file = tempfile.NamedTemporaryFile(delete=True)
         self.log_file_name = self.temp_log_file.name
-        self.temp_log_file.close()
+        self.temp_log_file.close()  # Close the file, Logger will open it
 
-        # Initialize Logger with the temporary file
+        # Initialize Logger with the temporary file name
         self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)
 
     def tearDown(self):
-        # Delete the temporary log file after testing
-        os.remove(self.log_file_name)
-        Logger.instance = None  # Reset the Logger instance for the next test
+        # Delete the temporary log file after testing if it exists
+        if os.path.exists(self.log_file_name):
+            os.remove(self.log_file_name)
+        Logger.instance = None
 
     def test_logging_to_file(self):
         self.logger.log("Test message", level=logging.INFO)

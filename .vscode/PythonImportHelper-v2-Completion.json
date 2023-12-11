@@ -383,7 +383,7 @@
         "kind": 6,
         "importPath": "archive.tests.libraries.auxiliary.test_logger",
         "description": "archive.tests.libraries.auxiliary.test_logger",
-        "peekOfCode": "class TestLogger(unittest.TestCase):\n    def setUp(self):\n        # Create a temporary file for logging\n        self.temp_log_file = tempfile.NamedTemporaryFile(delete=False)\n        self.log_file_name = self.temp_log_file.name\n        self.temp_log_file.close()\n        # Initialize Logger with the temporary file\n        self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)\n    def tearDown(self):\n        # Delete the temporary log file after testing",
+        "peekOfCode": "class TestLogger(unittest.TestCase):\n    def setUp(self):\n        # Create a name for a temporary file for logging without opening it\n        self.temp_log_file = tempfile.NamedTemporaryFile(delete=True)\n        self.log_file_name = self.temp_log_file.name\n        self.temp_log_file.close()  # Close the file, Logger will open it\n        # Initialize Logger with the temporary file name\n        self.logger = Logger.get_instance(log_file=self.log_file_name, log_level=logging.DEBUG, file_logging=True, console_logging=False)\n    def tearDown(self):\n        # Delete the temporary log file after testing if it exists",
         "detail": "archive.tests.libraries.auxiliary.test_logger",
         "documentation": {}
     },
