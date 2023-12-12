@@ -1,10 +1,8 @@
 # test_configuration.py
 import unittest
 from unittest.mock import Mock
-
-from src.libraries.configuration import ConfigStrategy
-from src.libraries.configuration import Configuration, ConfigurationError
-
+from configuration import Configuration
+from config_strategy import ConfigStrategy
 
 class TestConfiguration(unittest.TestCase):
     """Tests for the Configuration class."""
@@ -52,7 +50,7 @@ class TestConfiguration(unittest.TestCase):
 
         config = Configuration([mock_faulty_strategy])
         
-        with self.assertRaises(ConfigurationError):
+        with self.assertRaises(RuntimeError):
             config.load()
 
 if __name__ == '__main__':

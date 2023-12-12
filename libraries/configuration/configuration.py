@@ -1,10 +1,6 @@
 # configuration.py
 from config_strategy import ConfigStrategy
 
-class ConfigurationError(Exception):
-    """Custom exception class for Configuration errors."""
-    pass
-
 class Configuration:
     """Main class for application configuration management."""
 
@@ -21,14 +17,14 @@ class Configuration:
         """Loads configurations using the added strategies.
 
         Raises:
-            ConfigurationError: If an error occurs during loading of configurations.
+            RuntimeError: If an error occurs during loading of configurations.
         """
         for strategy in self.strategies:
             try:
                 new_config = strategy.read_config()
                 self._merge_config(new_config)
             except Exception as e:
-                raise ConfigurationError(f"Failed to load configuration: {e}")
+                raise RuntimeError(f"Failed to load configuration: {e}")
 
     def _merge_config(self, new_config: dict) -> None:
         """Merges a new configuration into the existing configuration data.

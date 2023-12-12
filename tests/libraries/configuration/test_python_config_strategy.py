@@ -1,4 +1,3 @@
-# test_python_config_strategy.py
 import unittest
 import tempfile
 from config_strategy import PythonConfigStrategy
