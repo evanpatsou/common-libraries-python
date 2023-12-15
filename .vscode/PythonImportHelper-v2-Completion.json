@@ -43,6 +43,14 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Dict",
         "importPath": "typing",
         "description": "typing",
@@ -128,6 +136,22 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
         "documentation": {}
     },
     {
@@ -652,12 +676,21 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponseProcessor",
+        "label": "APIResponseProcessor",
         "kind": 6,
         "importPath": "libraries.data.api.data_api_response_processors.data_api_response_processor",
         "description": "libraries.data.api.data_api_response_processors.data_api_response_processor",
-        "peekOfCode": "class JSONResponseProcessor(APIResponseProcessor):\n    \"\"\"\n    Processes JSON responses from an API.\n    This class handles the conversion of JSON responses into a standardized format.\n    \"\"\"\n    def process_response(self, response: Dict[str, Any]) -> Any:\n        \"\"\"\n        Processes the JSON response from the API.\n        Args:\n            response (Dict[str, Any]): The raw JSON response from the API.",
+        "peekOfCode": "class APIResponseProcessor(ABC):\n    \"\"\"\n    Abstract base class for API response processors.\n    Implementations of this class should provide methods to process\n    different API responses into a standardized format.\n    \"\"\"\n    @abstractmethod\n    def process_response(self, response: Any) -> Any:\n        \"\"\"\n        Processes the API response.",
         "detail": "libraries.data.api.data_api_response_processors.data_api_response_processor",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponseProcessor",
+        "kind": 6,
+        "importPath": "libraries.data.api.data_api_response_processors.json_response_processor",
+        "description": "libraries.data.api.data_api_response_processors.json_response_processor",
+        "peekOfCode": "class JSONResponseProcessor(APIResponseProcessor):\n    \"\"\"\n    Processes JSON responses from an API.\n    This class handles the conversion of JSON responses into a standardized format.\n    \"\"\"\n    def process_response(self, response: Dict[str, Any]) -> Any:\n        \"\"\"\n        Processes the JSON response from the API.\n        Args:\n            response (Dict[str, Any]): The raw JSON response from the API.",
+        "detail": "libraries.data.api.data_api_response_processors.json_response_processor",
         "documentation": {}
     },
     {

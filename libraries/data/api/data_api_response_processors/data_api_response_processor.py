@@ -1,40 +1,23 @@
-from typing import Any, Dict
-from .data_api_response_processor import APIResponseProcessor
+from abc import ABC, abstractmethod
+from typing import Any
 
-class JSONResponseProcessor(APIResponseProcessor):
+class APIResponseProcessor(ABC):
     """
-    Processes JSON responses from an API.
+    Abstract base class for API response processors.
 
-    This class handles the conversion of JSON responses into a standardized format.
+    Implementations of this class should provide methods to process
+    different API responses into a standardized format.
     """
 
-    def process_response(self, response: Dict[str, Any]) -> Any:
+    @abstractmethod
+    def process_response(self, response: Any) -> Any:
         """
-        Processes the JSON response from the API.
+        Processes the API response.
 
         Args:
-            response (Dict[str, Any]): The raw JSON response from the API.
+            response (Any): The raw response from the API.
 
         Returns:
-            Any: The processed data, potentially transformed or simplified from the original JSON.
+            Any: The processed data.
         """
-        # Example processing logic; adjust as needed for your specific API response structure
-        processed_data = self._transform_response(response)
-        return processed_data
-
-    def _transform_response(self, response: Dict[str, Any]) -> Any:
-        """
-        Transforms the API response into a desired format.
-
-        This method can be customized based on the specific needs of your application and the
-        structure of the API responses.
-
-        Args:
-            response (Dict[str, Any]): The raw JSON response from the API.
-
-        Returns:
-            Any: The transformed data.
-        """
-        # Example transformation logic
-        # This could involve flattening nested structures, extracting certain fields, etc.
-        return response  # Placeholder for actual transformation logic
+        pass
