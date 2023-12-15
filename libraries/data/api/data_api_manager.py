@@ -1,76 +1,58 @@
-# data/source/api/data_api_manager.py
-
 import requests
-from requests.exceptions import RequestException
-from data.source.file.file_handler_factory import FileHandlerFactory
+from typing import Any, Dict, List
 from .auth_strategies import AuthStrategy
-from exceptions.custom_exceptions import DataFetchError, FileSaveError
-from typing import Any, List
-import logging
+from .data_api_response_processors.api_response_processor import APIResponseProcessor
+from data.source.file.file import File
 
 class DataAPIManager:
-    """Manages API interactions and data storage.
-
-    This class handles fetching data from an API using a specified authentication
-    strategy and storing the data in files using a file handler factory.
-
-    Attributes:
-        base_url (str): Base URL of the API.
-        auth_strategy (AuthStrategy): The authentication strategy to use.
-        file_factory (FileHandlerFactory): A factory for creating file handlers.
+    """
+    Manages interactions with external APIs, handling authentication, data retrieval,
+    and response processing.
     """
 
-    def __init__(self, base_url: str, auth_strategy: AuthStrategy) -> None:
-        """Initializes the DataAPIManager with a base URL and an authentication strategy.
+    def __init__(self, auth_strategy: AuthStrategy, response_processor: APIResponseProcessor) -> None:
+        """
+        Initializes the DataAPIManager with an authentication strategy and a response processor.
+
+        Args:
+            auth_strategy (AuthStrategy): The authentication strategy for API access.
+            response_processor (APIResponseProcessor): The processor for handling API responses.
+        """
+        self.auth_strategy = auth_strategy
+        self.response_processor = response_processor
+
+    def fetch_data(self, base_url: str, endpoint: str, params: Dict[str, Any] = None) -> Any:
+        """
+        Fetches data from the specified API endpoint and processes the response.
 
         Args:
             base_url (str): The base URL of the API.
-            auth_strategy (AuthStrategy): The authentication strategy.
-        """
-        self.base_url = base_url
-        self.auth_strategy = auth_strategy
-        self.file_factory = FileHandlerFactory()
-
-    def fetch_data(self, endpoint: str) -> Any:
-        """Fetches data from a specific API endpoint.
-
-        Args:
             endpoint (str): The API endpoint to fetch data from.
+            params (Dict[str, Any], optional): Query parameters to include in the request.
 
         Returns:
-            Any: The data returned by the API.
+            Any: The processed data returned by the API.
 
         Raises:
-            DataFetchError: If the request to the API fails.
+            requests.RequestException: If the request to the API fails.
         """
-        try:
-            if not self.auth_strategy.is_authenticated():
-                self.auth_strategy.authenticate()
+        if not self.auth_strategy.is_authenticated():
+            self.auth_strategy.authenticate()
 
-            headers = {'Authorization': f'Bearer {self.auth_strategy.authenticate()}'}
-            response = requests.get(f'{self.base_url}/{endpoint}', headers=headers)
-            response.raise_for_status()
-            return response.json()
+        headers = {'Authorization': f'Bearer {self.auth_strategy.authenticate()}'}
+        full_url = f'{base_url}/{endpoint}'
+        response = requests.get(full_url, headers=headers, params=params)
+        response.raise_for_status()
 
-        except RequestException as e:
-            logging.error(f"Error fetching data from API: {e}")
-            raise DataFetchError(f"Failed to fetch data from {endpoint}")
+        return self.response_processor.process_response(response.json())
 
     def store_data(self, data: Any, file_paths: List[str]) -> None:
-        """Stores the given data in the specified files.
+        """
+        Stores the given data in the specified file paths.
 
         Args:
             data (Any): The data to be stored.
             file_paths (List[str]): A list of file paths where the data should be stored.
-
-        Raises:
-            FileSaveError: If saving the data to any of the files fails.
         """
         for path in file_paths:
-            try:
-                file_type = path.split('.')[-1]
-                file_handler = self.file_factory.get_handler(file_type, path)
-                file_handler.save(data)
-            except IOError as e:
-                logging.error(f"Error saving data to file {path}: {e}")
-                raise FileSaveError(f"Failed to save data to {path}")
+            File.save(data, path)

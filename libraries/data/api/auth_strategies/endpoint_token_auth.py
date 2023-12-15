@@ -1,32 +1,41 @@
+import requests
 from .auth_strategy import AuthStrategy
 import logging
 
-class ManualTokenAuth(AuthStrategy):
-    """Manual token-based authentication strategy."""
+class EndpointTokenAuth(AuthStrategy):
+    """Endpoint-based token authentication strategy."""
 
-    def __init__(self, token: str) -> None:
-        """Initialize with a provided token.
+    def __init__(self, auth_endpoint: str, credentials: dict) -> None:
+        """Initialize with authentication endpoint and credentials.
 
         Args:
-            token (str): The authentication token.
+            auth_endpoint (str): The endpoint for authentication.
+            credentials (dict): The credentials required for authentication.
         """
-        self.token = token
-        self.authenticated = True  # Assuming the provided token is initially valid
+        self.auth_endpoint = auth_endpoint
+        self.credentials = credentials
+        self.token = None
 
     def authenticate(self) -> str:
-        """Return the authentication token.
+        """Authenticate via the endpoint and return the token.
 
         Returns:
             str: The authentication token.
         """
-        return self.token
+        try:
+            response = requests.post(self.auth_endpoint, data=self.credentials)
+            response.raise_for_status()
+            self.token = response.json().get('token')
+            return self.token
+        except requests.RequestException as e:
+            logging.error(f"Authentication failed: {e}")
+            return None
 
     def is_authenticated(self) -> bool:
-        """Check if the current authentication is still valid.
+        """Check if the current authentication token is still valid.
 
         Returns:
             bool: True if authenticated, False otherwise.
         """
-        # Implement logic to check if the token is still valid
         # Placeholder implementation
-        return self.authenticated
+        return self.token is not None

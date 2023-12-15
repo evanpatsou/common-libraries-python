@@ -43,6 +43,30 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -204,51 +228,19 @@
         "documentation": {}
     },
     {
-        "label": "RequestException",
-        "importPath": "requests.exceptions",
-        "description": "requests.exceptions",
+        "label": "File",
+        "importPath": "data.source.file.file",
+        "description": "data.source.file.file",
         "isExtraImport": true,
-        "detail": "requests.exceptions",
+        "detail": "data.source.file.file",
         "documentation": {}
     },
     {
-        "label": "FileHandlerFactory",
-        "importPath": "data.source.file.file_handler_factory",
-        "description": "data.source.file.file_handler_factory",
+        "label": "File",
+        "importPath": "data.source.file.file",
+        "description": "data.source.file.file",
         "isExtraImport": true,
-        "detail": "data.source.file.file_handler_factory",
-        "documentation": {}
-    },
-    {
-        "label": "FileHandlerFactory",
-        "importPath": "data.source.file.file_handler_factory",
-        "description": "data.source.file.file_handler_factory",
-        "isExtraImport": true,
-        "detail": "data.source.file.file_handler_factory",
-        "documentation": {}
-    },
-    {
-        "label": "FileHandlerFactory",
-        "importPath": "data.source.file.file_handler_factory",
-        "description": "data.source.file.file_handler_factory",
-        "isExtraImport": true,
-        "detail": "data.source.file.file_handler_factory",
-        "documentation": {}
-    },
-    {
-        "label": "DataFetchError",
-        "importPath": "exceptions.custom_exceptions",
-        "description": "exceptions.custom_exceptions",
-        "isExtraImport": true,
-        "detail": "exceptions.custom_exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "FileSaveError",
-        "importPath": "exceptions.custom_exceptions",
-        "description": "exceptions.custom_exceptions",
-        "isExtraImport": true,
-        "detail": "exceptions.custom_exceptions",
+        "detail": "data.source.file.file",
         "documentation": {}
     },
     {
@@ -385,6 +377,22 @@
         "documentation": {}
     },
     {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
         "label": "patch",
         "importPath": "unittest.mock",
         "description": "unittest.mock",
@@ -394,6 +402,14 @@
     },
     {
         "label": "mock_open",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
         "importPath": "unittest.mock",
         "description": "unittest.mock",
         "isExtraImport": true,
@@ -435,6 +451,30 @@
         "documentation": {}
     },
     {
+        "label": "APIResponseProcessor",
+        "importPath": "data.source.api.data_api_response_processors.api_response_processor",
+        "description": "data.source.api.data_api_response_processors.api_response_processor",
+        "isExtraImport": true,
+        "detail": "data.source.api.data_api_response_processors.api_response_processor",
+        "documentation": {}
+    },
+    {
+        "label": "APIResponseProcessor",
+        "importPath": "data.source.api.data_api_response_processors.api_response_processor",
+        "description": "data.source.api.data_api_response_processors.api_response_processor",
+        "isExtraImport": true,
+        "detail": "data.source.api.data_api_response_processors.api_response_processor",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponseProcessor",
+        "importPath": "data.source.api.data_api_response_processors.json_response_processor",
+        "description": "data.source.api.data_api_response_processors.json_response_processor",
+        "isExtraImport": true,
+        "detail": "data.source.api.data_api_response_processors.json_response_processor",
+        "documentation": {}
+    },
+    {
         "label": "BackupManager",
         "importPath": "data.backup.backup_manager",
         "description": "data.backup.backup_manager",
@@ -451,11 +491,51 @@
         "documentation": {}
     },
     {
-        "label": "File",
-        "importPath": "data.source.file.file",
-        "description": "data.source.file.file",
+        "label": "DataAPIManager",
+        "importPath": "data.source.api.data_api_manager",
+        "description": "data.source.api.data_api_manager",
         "isExtraImport": true,
-        "detail": "data.source.file.file",
+        "detail": "data.source.api.data_api_manager",
+        "documentation": {}
+    },
+    {
+        "label": "AuthStrategy",
+        "importPath": "data.source.api.auth_strategies",
+        "description": "data.source.api.auth_strategies",
+        "isExtraImport": true,
+        "detail": "data.source.api.auth_strategies",
+        "documentation": {}
+    },
+    {
+        "label": "ManualTokenAuth",
+        "importPath": "data.source.api.auth_strategies",
+        "description": "data.source.api.auth_strategies",
+        "isExtraImport": true,
+        "detail": "data.source.api.auth_strategies",
+        "documentation": {}
+    },
+    {
+        "label": "EndpointTokenAuth",
+        "importPath": "data.source.api.auth_strategies",
+        "description": "data.source.api.auth_strategies",
+        "isExtraImport": true,
+        "detail": "data.source.api.auth_strategies",
+        "documentation": {}
+    },
+    {
+        "label": "FileHandlerFactory",
+        "importPath": "data.source.file.file_handler_factory",
+        "description": "data.source.file.file_handler_factory",
+        "isExtraImport": true,
+        "detail": "data.source.file.file_handler_factory",
+        "documentation": {}
+    },
+    {
+        "label": "FileHandlerFactory",
+        "importPath": "data.source.file.file_handler_factory",
+        "description": "data.source.file.file_handler_factory",
+        "isExtraImport": true,
+        "detail": "data.source.file.file_handler_factory",
         "documentation": {}
     },
     {
@@ -554,11 +634,11 @@
         "documentation": {}
     },
     {
-        "label": "ManualTokenAuth",
+        "label": "EndpointTokenAuth",
         "kind": 6,
         "importPath": "libraries.data.api.auth_strategies.endpoint_token_auth",
         "description": "libraries.data.api.auth_strategies.endpoint_token_auth",
-        "peekOfCode": "class ManualTokenAuth(AuthStrategy):\n    \"\"\"Manual token-based authentication strategy.\"\"\"\n    def __init__(self, token: str) -> None:\n        \"\"\"Initialize with a provided token.\n        Args:\n            token (str): The authentication token.\n        \"\"\"\n        self.token = token\n        self.authenticated = True  # Assuming the provided token is initially valid\n    def authenticate(self) -> str:",
+        "peekOfCode": "class EndpointTokenAuth(AuthStrategy):\n    \"\"\"Endpoint-based token authentication strategy.\"\"\"\n    def __init__(self, auth_endpoint: str, credentials: dict) -> None:\n        \"\"\"Initialize with authentication endpoint and credentials.\n        Args:\n            auth_endpoint (str): The endpoint for authentication.\n            credentials (dict): The credentials required for authentication.\n        \"\"\"\n        self.auth_endpoint = auth_endpoint\n        self.credentials = credentials",
         "detail": "libraries.data.api.auth_strategies.endpoint_token_auth",
         "documentation": {}
     },
@@ -572,11 +652,20 @@
         "documentation": {}
     },
     {
+        "label": "JSONResponseProcessor",
+        "kind": 6,
+        "importPath": "libraries.data.api.data_api_response_processors.data_api_response_processor",
+        "description": "libraries.data.api.data_api_response_processors.data_api_response_processor",
+        "peekOfCode": "class JSONResponseProcessor(APIResponseProcessor):\n    \"\"\"\n    Processes JSON responses from an API.\n    This class handles the conversion of JSON responses into a standardized format.\n    \"\"\"\n    def process_response(self, response: Dict[str, Any]) -> Any:\n        \"\"\"\n        Processes the JSON response from the API.\n        Args:\n            response (Dict[str, Any]): The raw JSON response from the API.",
+        "detail": "libraries.data.api.data_api_response_processors.data_api_response_processor",
+        "documentation": {}
+    },
+    {
         "label": "DataAPIManager",
         "kind": 6,
         "importPath": "libraries.data.api.data_api_manager",
         "description": "libraries.data.api.data_api_manager",
-        "peekOfCode": "class DataAPIManager:\n    \"\"\"Manages API interactions and data storage.\n    This class handles fetching data from an API using a specified authentication\n    strategy and storing the data in files using a file handler factory.\n    Attributes:\n        base_url (str): Base URL of the API.\n        auth_strategy (AuthStrategy): The authentication strategy to use.\n        file_factory (FileHandlerFactory): A factory for creating file handlers.\n    \"\"\"\n    def __init__(self, base_url: str, auth_strategy: AuthStrategy) -> None:",
+        "peekOfCode": "class DataAPIManager:\n    \"\"\"\n    Manages interactions with external APIs, handling authentication, data retrieval,\n    and response processing.\n    \"\"\"\n    def __init__(self, auth_strategy: AuthStrategy, response_processor: APIResponseProcessor) -> None:\n        \"\"\"\n        Initializes the DataAPIManager with an authentication strategy and a response processor.\n        Args:\n            auth_strategy (AuthStrategy): The authentication strategy for API access.",
         "detail": "libraries.data.api.data_api_manager",
         "documentation": {}
     },
@@ -707,6 +796,15 @@
         "documentation": {}
     },
     {
+        "label": "TestJSONResponseProcessor",
+        "kind": 6,
+        "importPath": "tests.libraries.data.test_api_response_processors",
+        "description": "tests.libraries.data.test_api_response_processors",
+        "peekOfCode": "class TestJSONResponseProcessor(unittest.TestCase):\n    def test_process_response(self):\n        processor = JSONResponseProcessor()\n        raw_response = {\"key\": \"value\"}\n        processed_response = processor.process_response(raw_response)\n        self.assertEqual(processed_response, raw_response)  # assuming simple processing\nif __name__ == '__main__':\n    unittest.main()",
+        "detail": "tests.libraries.data.test_api_response_processors",
+        "documentation": {}
+    },
+    {
         "label": "TestBackupManager",
         "kind": 6,
         "importPath": "tests.libraries.data.test_backup_manager",
@@ -725,6 +823,15 @@
         "documentation": {}
     },
     {
+        "label": "TestDataAPIManager",
+        "kind": 6,
+        "importPath": "tests.libraries.data.test_data_api manager",
+        "description": "tests.libraries.data.test_data_api manager",
+        "peekOfCode": "class TestDataAPIManager(unittest.TestCase):\n    @patch('requests.get')\n    def test_fetch_data(self, mock_get):\n        # Mocking the components\n        mock_auth_strategy = Mock(spec=AuthStrategy)\n        mock_auth_strategy.is_authenticated.return_value = True\n        mock_auth_strategy.authenticate.return_value = 'token'\n        mock_processor = Mock(spec=APIResponseProcessor)\n        mock_processor.process_response.return_value = {'processed': 'data'}\n        # Setting up the mocked response",
+        "detail": "tests.libraries.data.test_data_api manager",
+        "documentation": {}
+    },
+    {
         "label": "TestFile",
         "kind": 6,
         "importPath": "tests.libraries.data.test_file",
@@ -740,6 +847,24 @@
         "description": "tests.libraries.data.test_file_handler_factory",
         "peekOfCode": "class TestFileHandlerFactory(unittest.TestCase):\n    def setUp(self):\n        \"\"\"Set up the FileHandlerFactory instance for testing.\"\"\"\n        self.factory = FileHandlerFactory()\n    def test_get_handler_json(self):\n        \"\"\"Test that the factory returns a JSONFileHandler for 'json' files.\"\"\"\n        handler = self.factory.get_handler('json', 'test.json')\n        self.assertIsInstance(handler, JSONFileHandler)\n    def test_get_handler_csv(self):\n        \"\"\"Test that the factory returns a CSVFileHandler for 'csv' files.\"\"\"",
         "detail": "tests.libraries.data.test_file_handler_factory",
+        "documentation": {}
+    },
+    {
+        "label": "TestManualTokenAuth",
+        "kind": 6,
+        "importPath": "tests.libraries.data.test_token_auth",
+        "description": "tests.libraries.data.test_token_auth",
+        "peekOfCode": "class TestManualTokenAuth(unittest.TestCase):\n    def test_authenticate(self):\n        auth = ManualTokenAuth(\"test-token\")\n        self.assertEqual(auth.authenticate(), \"test-token\")\nclass TestEndpointTokenAuth(unittest.TestCase):\n    @patch('requests.post')\n    def test_authenticate(self, mock_post):\n        mock_response = mock_post.return_value\n        mock_response.json.return_value = {'token': 'endpoint-token'}\n        auth = EndpointTokenAuth(\"http://api.example.com/auth\", {\"username\": \"user\", \"password\": \"pass\"})",
+        "detail": "tests.libraries.data.test_token_auth",
+        "documentation": {}
+    },
+    {
+        "label": "TestEndpointTokenAuth",
+        "kind": 6,
+        "importPath": "tests.libraries.data.test_token_auth",
+        "description": "tests.libraries.data.test_token_auth",
+        "peekOfCode": "class TestEndpointTokenAuth(unittest.TestCase):\n    @patch('requests.post')\n    def test_authenticate(self, mock_post):\n        mock_response = mock_post.return_value\n        mock_response.json.return_value = {'token': 'endpoint-token'}\n        auth = EndpointTokenAuth(\"http://api.example.com/auth\", {\"username\": \"user\", \"password\": \"pass\"})\n        self.assertEqual(auth.authenticate(), \"endpoint-token\")\nif __name__ == '__main__':\n    unittest.main()",
+        "detail": "tests.libraries.data.test_token_auth",
         "documentation": {}
     },
     {
